@@ -1,0 +1,4 @@
+#ifndef PRINTF_WRAPPER_INCLUDED
+#define PRINTF_WRAPPER_INCLUDED
+
+#endif
