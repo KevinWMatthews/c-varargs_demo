@@ -10,3 +10,15 @@ void printf_wrapper(const char *format, ...)
     vprintf(format, args);
     va_end(args);
 }
+
+int snprintf_wrapper(char *buffer, size_t size, const char *format, ...)
+{
+    va_list args;
+    int len = 0;
+
+    va_start(args, format);
+    len = vsnprintf(buffer, size, format, args);
+    va_end(args);
+
+    return len;
+}
